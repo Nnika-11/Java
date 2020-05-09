@@ -1,7 +1,6 @@
 package Java;
 public class Airport {
 
-
         public static volatile Runway RUNWAY = new Runway();   //we have only one
 
         public static void main(String[] args) throws InterruptedException {

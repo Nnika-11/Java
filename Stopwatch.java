@@ -28,7 +28,6 @@ public class Stopwatch {
                     Thread.sleep(1000);
                     this.seconds++;
                 }
-                //add your code here - добавьте код тут
             } catch (InterruptedException e) {
                 System.out.println(seconds);
             }

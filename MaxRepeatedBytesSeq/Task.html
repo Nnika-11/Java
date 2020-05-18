@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>TaskDiscription</title>
+</head>
+<body class="py-4 ">
+<div class="container border border-secondary rounded p-5">
+    <!-- Content here -->
+
+    <h1>Longest sequences of bytes</h1>
+    <ol>
+        <li>Input the name of file</li>
+        <li>Find byte/bytes with the maximum number of repetitions</li>
+        <li>Output them separated by a space </li>
+    </ol>
+
+
+</div>
+<hr class="my-4">
+<div class="container border border-secondary rounded ">
+    <h2>Examples</h2>
+
+    <div class="bg-dark text-white  pl-3">
+        <p><span class="font-weight-bold mr-2"> All bytes: </span>[<span class="text-danger"> 115</span>, 100, 100, 102,
+            <span class="text-danger"> 103</span>, <span class="text-danger"> 103</span>, <span class="text-danger"> 103</span>,
+            104, <span class="text-danger"> 115</span>, <span class="text-danger"> 115</span>]</br>
+            <span class="font-weight-bold mr-2"> Result: </span>103 115</p>
+
+    </div>
+
+
+    <div class="bg-dark text-white  pl-3">
+        <p><span class="font-weight-bold mr-2"> All bytes: </span>[108, 107, 106, 104, <span class="text-danger"> 111</span>, 103, 101, 114, 116, 121, 117, 105, <span class="text-danger"> 111</span>]</br>
+            <span class="font-weight-bold mr-2"> Result: </span>111</p>
+
+    </div>
+
+
+
+    <div class="bg-dark text-white  pl-3">
+        <p><span class="font-weight-bold mr-2"> All bytes: </span>[108, 107, 106, 104, 103, 101, 114, 116, 121, 117, 105, 111]</br>
+            <span class="font-weight-bold mr-2"> Result: </span>None</p>
+
+    </div>
+</div>
+
+    <!--  Wanted to add fancy jquerry with code, but just thought it is a waist of time... -->
+
+
+    <!--
+    <div class="container border border-secondary rounded  bg-dark text-white mt-2">
+        <div> <h2>1. Input the name of file </h2></div>
+        <div class="mt-1">
+            <p>BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));</br>
+                FileInputStream file = new FileInputStream(reader.readLine());</br>
+            <span class="text-white-50">// let's put all bytes to a List</span></br>
+                List<Integer> nums = new ArrayList<>(); </br>
+                    List<Integer> repArr = new ArrayList<>(); </br>
+                        while (file.available()>0){ </br>
+                        <span class="ml-4">nums.add(file.read()); </span></br>
+                        } </br>
+                        reader.close(); </br>
+                        file.close();</br>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div class="container border border-secondary rounded  bg-dark text-white mt-2">
+
+
+        <div> <h2>2. Find byte/bytes with the maximum number of repetitions </h2></div>
+        <div class="mt-1">
+            <p>BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));</br>
+                FileInputStream file = new FileInputStream(reader.readLine());</br>
+                <span class="text-white-50">// let's put all bytes to a List</span></br>
+
+
+                        Collections.sort(nums); </br>
+
+            </p>
+        </div>
+    </div>
+    -->
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

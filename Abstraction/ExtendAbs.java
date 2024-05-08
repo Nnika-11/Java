@@ -41,6 +41,7 @@ public class ExtendAbs extends Abstraction {
         abs.abstractM();
         System.out.println("----------------------------");
         staticM();
-        abs3.staticM();
+        abs3.staticM(); //not good
+
     }
 }

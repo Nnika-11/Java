@@ -1,6 +1,5 @@
 
-## read wiki
-
+### Read All Wiki
 ## Comparable Interface
 
 The `Comparable` interface in Java is used to order the objects of a user-defined class.

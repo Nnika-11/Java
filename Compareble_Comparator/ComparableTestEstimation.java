@@ -32,4 +32,12 @@ public class ComparableTestEstimation implements Comparable<ComparableTestEstima
         // If priorities are the same, compare by estimated hours
         return Integer.compare(this.estimatedHours, o.estimatedHours);
     }
+
+    public String toString() {
+        return "TestEstimation{" +
+                "taskName='" + taskName + '\'' +
+                ", estimatedHours=" + estimatedHours +
+                ", priority=" + priority +
+                '}';
+    }
 }

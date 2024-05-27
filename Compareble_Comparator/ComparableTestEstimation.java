@@ -19,7 +19,7 @@ public class ComparableTestEstimation implements Comparable<ComparableTestEstima
             res = Integer.compare(this.estimatedHours, other.estimatedHours);
         }
         if(res==0){
-            // If priorities are the same, compare by estimated hours
+            // If priorities are the same, compare by taskName
             return this.taskName.compareTo(other.taskName);
         }
         return res;

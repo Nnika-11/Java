@@ -11,26 +11,18 @@ public class ComparableTestEstimation implements Comparable<ComparableTestEstima
         this.priority = priority;
     }
 
-    public String getTaskName() {
-        return taskName;
-    }
-
-    public int getEstimatedHours() {
-        return estimatedHours;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
     @Override
-    public int compareTo(ComparableTestEstimation o) {
-        int priorityComparison = Integer.compare(this.priority, o.priority);
-        if (priorityComparison != 0) {
-            return priorityComparison;
+    public int compareTo(ComparableTestEstimation other) {
+        int res = this.priority-other.priority;
+        if(res==0){
+            // If priorities are the same, compare by estimated hours
+            res = Integer.compare(this.estimatedHours, other.estimatedHours);
         }
-        // If priorities are the same, compare by estimated hours
-        return Integer.compare(this.estimatedHours, o.estimatedHours);
+        if(res==0){
+            // If priorities are the same, compare by estimated hours
+            return this.taskName.compareTo(other.taskName);
+        }
+        return res;
     }
 
     public String toString() {

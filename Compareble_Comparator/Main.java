@@ -11,10 +11,11 @@ public class Main {
         estimations.add(new ComparableTestEstimation("Task B", 2, 3));
         estimations.add(new ComparableTestEstimation("Task C", 8, 2));
         estimations.add(new ComparableTestEstimation("Task E", 6, 2));
-        Collections.sort(estimations);
+        estimations.add(new ComparableTestEstimation("Task D", 6, 2));
 
+        Collections.sort(estimations);
         for (ComparableTestEstimation estimation : estimations) {
-            System.out.println(estimation);
+            System.out.println(estimation.toString());
         }
     }
 }

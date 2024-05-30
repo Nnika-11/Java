@@ -23,3 +23,10 @@ Returns:\
 the value 0 if x == y;\
 a value less than 0 if x < y; \
 and a value greater than 0 if x > y;
+
+## Comparator Interface
+The `Comparator` interface in Java is used to order the objects of a user-defined class.
+It provides a way to define **multiple sorting** sequences in the `compare(Object, Object)` method, unlike the Comparable interface, 
+which provides a single sorting sequence.
+
+

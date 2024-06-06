@@ -1,4 +1,4 @@
-## Java
+## Java Class and Object
 
 Class - every application begins with a class name -  class must match the filename and starts with capital letter
 
@@ -9,6 +9,8 @@ Object - instance of the class
 - Methods - object behavior, which defines the actions they can perform (methods can have **parameters**)
 - Identity - typically managed internally by the JVM (Java Virtual Machine) and isn't directly visible to the programmer
 - *Constructor* - a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+<details>
+  <summary> <b> Example </b> </summary><br>
 
 ```
 public class BoardGame {
@@ -40,3 +42,4 @@ public class BoardGame {
         BoardGame game2 = new BoardGame("Hero Realms", 4, 1.86);
         game1.getGameInfo() //will print info
 ```
+</details>

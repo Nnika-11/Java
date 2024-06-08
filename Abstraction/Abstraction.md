@@ -3,8 +3,8 @@
 Abstraction - hiding details (complexity), show functionality. (must be inherited from another class)
 
 <b>Abstract class</b> <br>
-<span style="background-color:#99ffcc; color:black; padding: 5px">abstract</span>
-<span style="background-color:#99ffcc; color:black; padding: 5px">extends</span>
+<code  style="background-color:#99ffcc; color:black; padding: 5px">abstract</code>
+<code style="background-color:#99ffcc; color:black; padding: 5px">extends</code>
 1) Can't be instantiated 
 2) can nave constructors, static methods, regular methods
 

@@ -6,13 +6,13 @@ Abstraction - hiding details (complexity), show functionality. (must be inherite
 <code  style="background-color:#99ffcc; color:black; padding: 5px">abstract</code>
 <code style="background-color:#99ffcc; color:black; padding: 5px">extends</code>
 1) Can't be instantiated 
-2) can nave constructors, static methods, regular methods
+2) Can nave constructors, static methods, regular methods
 
 <b>Abstract method</b>
 1) Doesn't have implementation (no body)
 2) Can't be private
 3) All subclasses of abstract superclass should implement all abstract methods or be abstract
-4) if class has abstract method it is an abstract class
+4) If class has abstract method it is an abstract class
 <details>
   <summary> <b> Example </b> </summary><br>
 
@@ -38,5 +38,9 @@ class Pig extends Animal {
 </details>
 
 <b>Interface</b><br>
-<span style="background-color:#99ffcc; color:black; padding: 5px">interface</span>
-<span style="background-color:#99ffcc; color:black; padding: 5px">implements</span>
+<code style="background-color:#99ffcc; color:black; padding: 5px">interface</code>
+<code style="background-color:#99ffcc; color:black; padding: 5px">implements</code>
+1. Multi inheritance
+2. All methods are abstract and public by default
+3. All variables are public, static, final
+4. Can have `default` method with realisation (body)

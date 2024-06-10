@@ -44,3 +44,6 @@ class Pig extends Animal {
 2. All methods are abstract and public by default
 3. All variables are public, static, final
 4. Can have `default` method with realisation (body)
+
+
+[Abstraction Examples](https://github.com/Nnika-11/Java/tree/master/Abstraction)

@@ -47,3 +47,29 @@ class Pig extends Animal {
 
 
 [Abstraction Examples](https://github.com/Nnika-11/Java/tree/master/Abstraction)
+
+
+## Encapsulation
+
+Encapsulation - process of wrapping code and data together into a single unit - class. In encapsulation, 
+a class's variables are hidden from other classes and can only be accessed
+by the methods of the class in which they are found.
+
+![](https://cdn-images-1.medium.com/max/1032/1*LxzenIa4d1QuPw1bWjzbGA.png)
+
+- access modifiers
+- getters and setters
+
+
+<b>Access Modifiers</b>
+
+|  | Class | Package | Subclass, Outside Package | Non-Subclass, Outside Package |
+|-------------|:-----:|:-------:|:-------------------------:|:-----------------------------:|
+| `Private`   | **Y** |    N    |             N             |               N               |
+| `Default`   |   **Y**   |    **Y**    |             N             |               N               |
+| `Protected` |   **Y**  |    **Y**    |            **Y**             |               N               |
+| `Public`    |   **Y**  |   **Y**   |             **Y**            |              **Y**               |
+
+Package - group of similar types of classes, interfaces, sub-packages etc. 
+
+<b>Non-Access Modifiers</b>

@@ -72,4 +72,9 @@ by the methods of the class in which they are found.
 
 Package - group of similar types of classes, interfaces, sub-packages etc. 
 
-<b>Non-Access Modifiers</b>
+<b>Non-Access Modifiers</b> <br>
+`static` \
+static class - can be only inside the other class (nested).  
+Static class can access only the static members of the outer class.
+
+A good use of a static class is in defining one-off, utility and/or library classes where instantiation would not make sense. A great example is the Math class that contains some mathematical constants such as PI and E and simply provides mathematical calculations. Requiring instantiation in such a case would be unnecessary and confusing.

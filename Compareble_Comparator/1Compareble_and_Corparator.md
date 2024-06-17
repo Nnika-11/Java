@@ -39,18 +39,20 @@ Create a Movie class and implement the
 Comparable interface to sort the movies by their titles in alphabetical order.
 Check the resul by running:
 ```java
-public static void main(String[] args) {
-        List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("Inception", 2010, 8.8));
-        movies.add(new Movie("The Godfather", 1972, 9.2));
-        movies.add(new Movie("Interstellar", 2014, 8.6));
+public class Main {
+   public static void main(String[] args) {
+      List<Movie> movies = new ArrayList<>();
+      movies.add(new Movie("Inception", 2010, 8.8));
+      movies.add(new Movie("The Godfather", 1972, 9.2));
+      movies.add(new Movie("Interstellar", 2014, 8.6));
 
-        Collections.sort(movies);
+      Collections.sort(movies);
 
-        for (Movie movie : movies) {
-            System.out.println(movie);
-        }
-    }
+      for (Movie movie : movies) {
+         System.out.println(movie);
+      }
+   }
+}
 ```
 
 ### 2. Sorting Movies by Complex Criteria
@@ -61,21 +63,23 @@ There will be null values for ratings.
 
 Check the resul by running:
 ```java
-public static void main(String[] args) {
-        List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("Inception", 2010, 8.8, "Sci-Fi"));
-        movies.add(new Movie("The Godfather", 1972, 9.2, "Crime"));
-        movies.add(new Movie("Interstellar", 2014, 8.6, "Sci-Fi"));
-        movies.add(new Movie("The Dark Knight", 2008, 9.0, "Action"));
-        movies.add(new Movie("The Shawshank Redemption", 1994, 9.3, "Drama"));
-        movies.add(new Movie("Tenet", 2020, null, "Sci-Fi"));
-        movies.add(new Movie("Joker", 2019, 8.5, "Drama"));
+public class Main {
+   public static void main(String[] args) {
+      List<Movie> movies = new ArrayList<>();
+      movies.add(new Movie("Inception", 2010, 8.8, "Sci-Fi"));
+      movies.add(new Movie("The Godfather", 1972, 9.2, "Crime"));
+      movies.add(new Movie("Interstellar", 2014, 8.6, "Sci-Fi"));
+      movies.add(new Movie("The Dark Knight", 2008, 9.0, "Action"));
+      movies.add(new Movie("The Shawshank Redemption", 1994, 9.3, "Drama"));
+      movies.add(new Movie("Tenet", 2020, null, "Sci-Fi"));
+      movies.add(new Movie("Joker", 2019, 8.5, "Drama"));
 
-        //add your code to sort collection of movies
+      //add your code to sort collection of movies
 
-        for (Movie movie : movies) {
-            System.out.println(movie);
-        }
-    }
+      for (Movie movie : movies) {
+         System.out.println(movie);
+      }
+   }
+}
 ```
 </details>

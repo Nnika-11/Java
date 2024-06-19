@@ -6,13 +6,14 @@ The `Comparable` interface in Java is used to order the objects of a user-define
 It contains only one method, `compareTo(Object)`, which provides a single sorting sequence.
 This interface is part of the `java.lang` package.
 
-[Example](https://github.com/Nnika-11/Java/blob/master/Compareble_Comparator/ComparableTestEstimation.java)
 1. Create your class
 2. Implement Comparable \<Generic>\
    <sup>(Generic is usually YourClassName)</sup>
 3. Override `compareTo` method
 4. Create an Array/Collection of YourClassName elements and populate the array 
 5. Use the Arrays/Collections.`sort()` function
+
+[Example](https://github.com/Nnika-11/Java/blob/master/Compareble_Comparator/ComparableTestEstimation.java)
 
 `X.compareTo(Y)`\
 Params:\
@@ -29,6 +30,42 @@ and a value greater than 0 if x > y;
 The `Comparator` interface in Java is used to order the objects of a user-defined class.
 It provides a way to define **multiple sorting** sequences in the `compare(Object, Object)` method, unlike the Comparable interface, 
 which provides a single sorting sequence.
+
+### Comparator methods:
+
+* `comparing()` - static method. It takes a function that extracts the key to be compared and returns a comparator for that key. \
+Movie class with a comparator that sorts movies by their title:\
+`Comparator<Movie> titleComparator = Comparator.comparing(Movie::getTitle);`
+`Movie::getTitle` is a method reference that serves as the key extractor function, 
+extracting the title of the movie for comparison.
+
+
+* `thenComparing()`  method is used to create a secondary Comparator that is
+applied when the primary Comparator considers two elements equal.
+`.thenComparing(Movie::getReleaseYear)` - This sorts the movies by release year if the previous criteria are equal.
+
+
+* `reversed()` - Returns a comparator that imposes the reverse of the original comparator's order.\
+`Comparator<Person> byAgeReversed = Comparator.comparing(Person::getAge).reversed();`
+
+
+* `reverseOrder()` - Returns a comparator that compares Comparable objects in reverse of their natural order.
+
+
+* `nullsFirst(), nullsLast()` - Returns a comparator that considers null to be less/greater than non-null values.
+
+```
+Comparator<Movie> combinedComparator = Comparator.comparing(Movie::getGenre)
+                .thenComparing(Movie::getRating, Comparator.nullsLast(Comparator.reverseOrder()))
+                .thenComparing(Movie::getReleaseYear);
+```
+
+1. Create your class
+2. Create Comparator class(es), in each:
+   1. Implement Comparator interface \<Generic>\
+   2. Override `compare` method
+3. Create an Array/Collection of YourClassName elements and populate the array
+4. Use the Arrays/Collections.`sort(List list, ComparatorClass c)` function
 
 
 <details>
